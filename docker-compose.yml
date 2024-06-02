@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  server:
+    build: ./server
+    image: sallin/server:latest
+    ports:
+      - 3001:3001
+    depends_on:
+      - db
+  client:
+    build: ./client
+    image: sallin/client:latest
+    ports:
+      - 3000:3000
+  db:
+    build: ./database
+    image: sallin/db:latest
+    volumes:
+      - mongodb_data_container:/data/db
+    ports:
+      - 27017:27017
+volumes:
+  mongodb_data_container:

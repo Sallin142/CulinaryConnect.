@@ -1,0 +1,60 @@
+.ingredient-item {
+    border: 1px solid #888;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+  }
+  
+  .recipe-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f0ece2; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .recipe-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    width: 400px;
+  }
+  p {
+    max-width: 400px;
+    font-size: 12px;
+  }
+  .search-recipe {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-recipe input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    width: 60%; /* adjust as needed */
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+  .recipes-name {
+      color: #596e79;
+      font-size: 24px;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+  }
+  
+  
